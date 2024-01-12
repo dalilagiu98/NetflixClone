@@ -1,0 +1,32 @@
+// PERSONALIZZAZIONE COLORI
+@import 'scss/functions';
+@import 'scss/variables'; 
+
+// PALETTE COLORI
+$new-primary: #141414;
+$new-secondary: #ffffff;
+$new-tertiary: #e50914;
+$new-light: #f5f5f1;
+
+// MAPPA COLORI
+$new-theme-colors: (
+  'nero': $new-primary,
+  'bianco': $new-secondary,
+  'rosso': $new-tertiary,
+  'grigio': $new-light,
+);
+$theme-colors: map-merge($theme-colors, $new-theme-colors);
+
+
+.horizontal-scrollable > .row {  
+  overflow-x: auto;  
+  white-space: nowrap;  
+}  
+
+.horizontal-scrollable > .row > .col-6 {  
+  display: inline-block;  
+  float: none;  
+}  
+
+
+@import 'scss/bootstrap.scss';

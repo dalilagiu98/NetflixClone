@@ -1,0 +1,83 @@
+@charset "UTF-8";
+#navbar {
+  transition: background-color 0.2s linear;
+}
+#navbar section {
+  height: 40vh;
+}
+#navbar section video {
+  width: 100%;
+}
+#navbar img {
+  height: 2em;
+}
+
+.bg-nero {
+  background-color: #141414;
+}
+
+header section {
+  height: 70vh;
+  overflow: hidden;
+}
+header section video {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#banner {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#banner button {
+  width: 20vw;
+}
+#banner button i {
+  font-size: 1.5em;
+}
+
+#tv-nav {
+  top: 3em;
+}
+
+#genres {
+  font-size: 0.8em;
+  padding: 0.25em;
+}
+
+footer {
+  opacity: 40%;
+}
+footer p {
+  font-size: 0.7em;
+}
+
+#services {
+  font-size: 0.6em;
+}
+
+input[type=checkbox] {
+  appearance: none; /* Nasconde lo stile predefinito del browser */
+  -webkit-appearance: none; /* Per i browser basati su WebKit (come Chrome e Safari) */
+  -moz-appearance: none; /* Per i browser basati su Gecko (come Firefox) */
+  width: 20px; /* Larghezza desiderata del checkbox */
+  height: 20px; /* Altezza desiderata del checkbox */
+  border: 2px solid #fff; /* Colore del bordo */
+  background-color: #141414; /* Colore di sfondo */
+  border-radius: 0px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked {
+  background-color: #e50914; /* Cambia il colore di sfondo quando è selezionato */
+  border: 2px solid #fff; /* Cambia il colore del bordo quando è selezionato */
+  color: #fff; /* Cambia il colore del testo quando è selezionato */
+}
+
+h5 {
+  background-color: rgba(74, 70, 70, 0.735);
+}
+
+#strive {
+  background-color: rgba(108, 102, 102, 0.735);
+}/*# sourceMappingURL=style.css.map */

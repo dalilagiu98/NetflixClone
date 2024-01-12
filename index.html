@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./custom-bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body class="bg-nero">
+    <header>
+      <nav
+        id="navbar"
+        class="navbar navbar-expand-lg position-fixed top-0 w-100 z-3"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <img src="./assets/logo.png" alt="logo-netflix" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul
+              class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+              style="--bs-scroll-height: 100px"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tv-shows">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">My List</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+              <button class="btn" type="submit">
+                <img src="./assets/kids_icon.png" alt="kids-icon" />
+              </button>
+              <button class="btn" type="submit">
+                <i class="bi bi-bell-fill"></i>
+              </button>
+              <button
+                class="btn dropdown nav-item dropdown-toggle"
+                type="submit"
+              >
+                <!-- perchè non collega la pagina? -->
+                <a href="./profile.html">
+                  <img class="" src="./assets/avatar.png" alt="avatar-image" />
+                </a>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="position-relative text-bianco">
+        <video autoplay muted loop class="w-100 h-100">
+          <source src="./assets/interstellar.mp4" />
+        </video>
+        <div
+          id="banner"
+          class="text-white position-absolute top-0 start-0 w-100 h-100"
+        >
+          <div
+            class="w-50 ms-4 h-100 d-flex flex-column justify-content-center align-items-start"
+          >
+            <h1 class="">Interstellar</h1>
+            <p class="lh-1">
+              In un futuro non precisato, un drastico cambiamento climatico
+              colpisce duramente l'agricoltura. Il granturco è l'unica
+              coltivazione ancora in grado di crescere ed un gruppo di
+              scienziati è intenzionato ad attraversare lo spazio per trovare
+              nuovi luoghi adatti a coltivarlo.
+            </p>
+            <div>
+              <button type="button" class="btn btn-light">
+                <i class="bi bi-play-fill"></i><span>Guarda</span>
+              </button>
+              <button type="button" class="btn btn-light">
+                <i class="bi bi-volume-up-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <nav
+        id="tv-nav"
+        class="navbar mt-3 navbar-expand-lg bg-nero position-sticky w-100 z-3"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <h2 id="tv-shows" class="navbar-brand fs-2" href="#">TV Shows</h2>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown border">
+              <a
+                id="genres"
+                class="nav-link active dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#trending">Trending Now</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#rewatch">Watch It Again</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#new-releases">New Releases</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <form class="d-flex" role="search">
+              <button class="btn border rounded-0" type="submit">
+                <i class="bi bi-list"></i>
+              </button>
+              <button class="btn border rounded-0" type="submit">
+                <i class="bi bi-grid-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section class="text-bianco mt-4 ps-3">
+        <h3 class="fs-5" id="trending">Trending Now</h3>
+        <div class="container-fluid">
+          <div class="row gx-1">
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media0.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media2.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media3.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media5.webp"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-bianco mt-4 ps-3">
+        <h3 class="fs-5" id="rewatch">Watch It Again</h3>
+        <div class="container-fluid">
+          <div class="row gx-1">
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media6.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media7.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media8.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media10.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media11.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="text-bianco mt-4 ps-3">
+        <h3 class="fs-5" id="new-releases">New Releases</h3>
+        <div class="container-fluid">
+          <div class="row gx-1">
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media12.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media13.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media14.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none d-md-block col-md-3 col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media15.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media16.webp"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media17.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-5">
+      <div class="container text-grigio ps-5 pe-5">
+        <div class="row">
+          <div class="col">
+            <button class="btn text-grigio">
+              <i class="bi bi-facebook"></i>
+            </button>
+            <button class="btn text-grigio">
+              <i class="bi bi-instagram"></i>
+            </button>
+            <button class="btn text-grigio">
+              <i class="bi bi-twitter"></i>
+            </button>
+            <button class="btn text-grigio">
+              <i class="bi bi-youtube"></i>
+            </button>
+          </div>
+        </div>
+        <div class="row gy-1 gx-1">
+          <div class="col-3">
+            <p>Audio and Subtitles</p>
+          </div>
+          <div class="col-3">
+            <p>Audio Description</p>
+          </div>
+          <div class="col-3">
+            <p>Help Center</p>
+          </div>
+          <div class="col-3">
+            <p>Gift Cards</p>
+          </div>
+          <div class="col-3">
+            <p>Media Center</p>
+          </div>
+          <div class="col-3">
+            <p>Investor Relations</p>
+          </div>
+          <div class="col-3">
+            <p>Jobs</p>
+          </div>
+          <div class="col-3">
+            <p>Terms of Use</p>
+          </div>
+          <div class="col-3">
+            <p>Privacy</p>
+          </div>
+          <div class="col-3">
+            <p>Legal Notices</p>
+          </div>
+          <div class="col-3">
+            <p>Cookie Preferences</p>
+          </div>
+          <div class="col-3">
+            <p>Corporate Information</p>
+          </div>
+          <div class="col-3">
+            <p>Contact Us</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <p
+              id="services"
+              class="border border-grigio text-grigio btn rounded-0"
+              type="submit"
+            >
+              Service Code
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p>&copy; 1997 - <span id="year"></span> Netflix, Inc.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

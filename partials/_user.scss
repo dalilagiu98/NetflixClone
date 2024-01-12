@@ -1,0 +1,25 @@
+input[type="checkbox"] {
+    appearance: none; /* Nasconde lo stile predefinito del browser */
+    -webkit-appearance: none; /* Per i browser basati su WebKit (come Chrome e Safari) */
+    -moz-appearance: none; /* Per i browser basati su Gecko (come Firefox) */
+    width: 20px; /* Larghezza desiderata del checkbox */
+    height: 20px; /* Altezza desiderata del checkbox */
+    border: 2px solid #fff; /* Colore del bordo */
+    background-color: #141414; /* Colore di sfondo */
+    border-radius: 0px; 
+    margin-right: 5px;  
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #e50914; /* Cambia il colore di sfondo quando è selezionato */
+    border: 2px solid #fff; /* Cambia il colore del bordo quando è selezionato */
+    color: #fff; /* Cambia il colore del testo quando è selezionato */
+}
+
+h5 {
+    background-color: rgba(74, 70, 70, 0.735)
+}
+#strive{
+    background-color: rgba(108, 102, 102, 0.735)
+}
