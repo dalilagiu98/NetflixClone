@@ -18,7 +18,9 @@
     />
   </head>
   <body class="bg-nero">
+    <!-- HEADER -->
     <header>
+      <!-- NAVBAR -->
       <nav
         id="navbar"
         class="navbar navbar-expand-lg position-fixed top-0 w-100 z-3"
@@ -68,19 +70,29 @@
               <button class="btn" type="submit">
                 <i class="bi bi-bell-fill"></i>
               </button>
-              <button
-                class="btn dropdown nav-item dropdown-toggle"
-                type="submit"
-              >
-                <!-- perchè non collega la pagina? -->
-                <a href="./profile.html">
+              <button class="btn nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <img class="" src="./assets/avatar.png" alt="avatar-image" />
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="profile.html"
+                      >Edit Profile</a
+                    >
+                  </li>
+                </ul>
               </button>
             </form>
           </div>
         </div>
       </nav>
+      <!-- BANNER -->
       <section class="position-relative text-bianco">
         <video autoplay muted loop class="w-100 h-100">
           <source src="./assets/interstellar.mp4" />
@@ -112,7 +124,9 @@
         </div>
       </section>
     </header>
+    <!-- MAIN -->
     <main>
+      <!-- SECONDA NAVBAR -->
       <nav
         id="tv-nav"
         class="navbar mt-3 navbar-expand-lg bg-nero position-sticky w-100 z-3"
@@ -160,6 +174,7 @@
           </div>
         </div>
       </nav>
+      <!-- SEZIONE CAROSELLO -->
       <section class="text-bianco mt-4 ps-3">
         <h3 class="fs-5" id="trending">Trending Now</h3>
         <div class="container-fluid">

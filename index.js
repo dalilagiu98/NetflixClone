@@ -22,11 +22,13 @@ const muteIcon = document.querySelector(".bi-volume-up-fill");
 const muteButton = muteIcon.parentNode;
 
 muteButton.addEventListener("click", () => {
-  video.muted = false;
-});
-
-muteButton.addEventListener("click", () => {
-  video.muted = false;
-  muteIcon.classList.remove(".volume-up-fill");
-  muteIcon.classList.add(".volume-mute-fill");
+  if (video.muted) {
+    video.muted = false;
+    muteIcon.classList.remove("bi-volume-up-fill");
+    muteIcon.classList.add("bi-volume-mute-fill");
+  } else {
+    video.muted = true;
+    muteIcon.classList.remove("bi-volume-mute-fill");
+    muteIcon.classList.add("bi-volume-up-fill");
+  }
 });
