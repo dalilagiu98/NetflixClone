@@ -80,12 +80,14 @@
                 >
                   <img class="" src="./assets/avatar.png" alt="avatar-image" />
                 </a>
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu dropdown-menu-end z-4">
                   <li>
                     <a class="dropdown-item" href="profile.html"
                       >Edit Profile</a
                     >
                   </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Impostation</a></li>
                 </ul>
               </button>
             </form>
@@ -93,7 +95,7 @@
         </div>
       </nav>
       <!-- BANNER -->
-      <section class="position-relative text-bianco">
+      <section style="height: 45vw" class="position-relative text-bianco">
         <video autoplay muted loop class="w-100 h-100">
           <source src="./assets/interstellar.mp4" />
         </video>
@@ -177,11 +179,13 @@
       <!-- SEZIONE CAROSELLO -->
       <section class="text-bianco mt-4 ps-3">
         <h3 class="fs-5" id="trending">Trending Now</h3>
-        <div class="container-fluid">
-          <div class="row gx-1">
+        <button class="slider button" onclick="scrollLeft()">sinistra</button>
+        <button class="slider button" onclick="scrollRight()">destra</button>
+        <div class="carousel container-fluid">
+          <div class="row gx-1 flex-nowrap">
             <div class="col-6 col-md-3 col-lg-2">
               <img
-                class="img-fluid thumbnail"
+                class="thumbnail img-fluid"
                 src="./assets/media/media0.webp"
                 alt=""
               />
@@ -211,6 +215,13 @@
               <img
                 class="img-fluid thumbnail"
                 src="./assets/media/media4.jpg"
+                alt=""
+              />
+            </div>
+            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
+              <img
+                class="img-fluid thumbnail"
+                src="./assets/media/media5.webp"
                 alt=""
               />
             </div>

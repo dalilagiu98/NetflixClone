@@ -44,6 +44,15 @@ header section video {
   padding: 0.25em;
 }
 
+.thumbnail {
+  transition: transform 200ms linear 0s;
+}
+
+.thumbnail:hover {
+  transform: scale(1.15);
+  box-shadow: 7px 10px 22px -5px #000000;
+}
+
 footer {
   opacity: 40%;
 }

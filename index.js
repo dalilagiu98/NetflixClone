@@ -32,3 +32,47 @@ muteButton.addEventListener("click", () => {
     muteIcon.classList.add("bi-volume-up-fill");
   }
 });
+
+// ANIMAZIONE THUMBNAIL (che fa un po' schifo perchè troppo veloce e senza transizione)
+// const thumbnails = document.querySelectorAll(".thumbnail");
+
+// console.log(thumbnails);
+
+// thumbnails.forEach((thumbnail) => {
+//   thumbnail.addEventListener("mouseenter", () => {
+//     thumbnail.style.transform = "scale(1.17)";
+//   });
+
+//   thumbnail.addEventListener("mouseleave", () => {
+//     thumbnail.style.transform = "scale(1)";
+//   });
+// });
+
+// CAROSELLO ORIZZONTALE
+// const carousel = document.querySelectorAll(".carousel");
+
+// console.log(carousel);
+// let scrollPerClick;
+// let scrollAmount = 0;
+
+// function scrollLeft() {
+//   carousel.scrollTo({
+//     top: 0,
+//     left: (scrollAmount -= scrollPerClick),
+//     behavior: "smooth",
+//   });
+
+//   if (scrollAmount < 0) {
+//     scrollAmount = 0;
+//   }
+// }
+
+// function scrollRight() {
+//   if (scrollAmount <= carousel.scrollWidth - carousel.clientWidth) {
+//     carousel.scrollTo({
+//       top: 0,
+//       left: (scrollAmount += scrollPerClick),
+//       behavior: "smooth",
+//     });
+//   }
+// }
