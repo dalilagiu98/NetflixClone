@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netflix demo</title>
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.webp" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -95,7 +96,7 @@
         </div>
       </nav>
       <!-- BANNER -->
-      <section style="height: 45vw" class="position-relative text-bianco">
+      <section style="height: 30vw" class="position-relative text-bianco">
         <video autoplay muted loop class="w-100 h-100">
           <source src="./assets/interstellar.mp4" />
         </video>
@@ -106,20 +107,20 @@
           <div
             class="w-50 ms-4 h-100 d-flex flex-column justify-content-center align-items-start"
           >
-            <h1 class="">Interstellar</h1>
-            <p class="lh-1">
-              In un futuro non precisato, un drastico cambiamento climatico
-              colpisce duramente l'agricoltura. Il granturco è l'unica
-              coltivazione ancora in grado di crescere ed un gruppo di
-              scienziati è intenzionato ad attraversare lo spazio per trovare
-              nuovi luoghi adatti a coltivarlo.
+            <h1 class="pt-5">Interstellar</h1>
+            <p class="lh-1 d-none d-lg-block">
+              In an unspecified future, a drastic climate change severely
+              impacts agriculture. Corn is the only crop still able to grow, and
+              a group of scientists is determined to travel through space to
+              find new places suitable for cultivating it.
             </p>
-            <div>
+            <div class="pb-4">
               <button type="button" class="btn btn-light">
-                <i class="bi bi-play-fill"></i><span>Guarda</span>
+                <i class="bi bi-play-fill fs-5"></i
+                ><span class="p-0 d-none d-md-inline">Watch</span>
               </button>
               <button type="button" class="btn btn-light">
-                <i class="bi bi-volume-up-fill"></i>
+                <i class="bi bi-volume-up-fill fs-5"></i>
               </button>
             </div>
           </div>
@@ -131,7 +132,7 @@
       <!-- SECONDA NAVBAR -->
       <nav
         id="tv-nav"
-        class="navbar mt-3 navbar-expand-lg bg-nero position-sticky w-100 z-3"
+        class="navbar mt-3 navbar-expand-lg bg-nero position-sticky w-100 z-2"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
@@ -179,10 +180,8 @@
       <!-- SEZIONE CAROSELLO -->
       <section class="text-bianco mt-4 ps-3">
         <h3 class="fs-5" id="trending">Trending Now</h3>
-        <button class="slider button" onclick="scrollLeft()">sinistra</button>
-        <button class="slider button" onclick="scrollRight()">destra</button>
         <div class="carousel container-fluid">
-          <div class="row gx-1 flex-nowrap">
+          <div class="row gx-2 gy-2">
             <div class="col-6 col-md-3 col-lg-2">
               <img
                 class="thumbnail img-fluid"
@@ -225,20 +224,13 @@
                 alt=""
               />
             </div>
-            <div class="col-6 d-sm-none col-md-3 d-lg-block col-lg-2">
-              <img
-                class="img-fluid thumbnail"
-                src="./assets/media/media5.webp"
-                alt=""
-              />
-            </div>
           </div>
         </div>
       </section>
       <section class="text-bianco mt-4 ps-3">
         <h3 class="fs-5" id="rewatch">Watch It Again</h3>
         <div class="container-fluid">
-          <div class="row gx-1">
+          <div class="row gx-2 gy-2">
             <div class="col-6 col-md-3 col-lg-2">
               <img
                 class="img-fluid thumbnail"
@@ -287,7 +279,7 @@
       <section class="text-bianco mt-4 ps-3">
         <h3 class="fs-5" id="new-releases">New Releases</h3>
         <div class="container-fluid">
-          <div class="row gx-1">
+          <div class="row gx-2 gy-2">
             <div class="col-6 col-md-3 col-lg-2">
               <img
                 class="img-fluid thumbnail"
